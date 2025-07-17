@@ -7,7 +7,8 @@ curl -L -k $URL -o "openlist${TAG_NAME}.tar.gz"
 tar xf "openlist${TAG_NAME}.tar.gz" --strip-components 1 -C ../sources
 rm -f ../sources/.gitignore
 # Frontend
-URL=https://github.com/OpenListTeam/OpenList-Frontend/releases/latest/download/openlist-frontend-dist-${TAG_NAME}.tar.gz
+# URL=https://github.com/OpenListTeam/OpenList-Frontend/releases/latest/download/openlist-frontend-dist-${TAG_NAME}.tar.gz
+URL=https://github.com/coordinate/OpenList-Frontend/releases/download/untagged-0e4077878998c6d47efd/openlist-frontend-dist-v0.0.0-0ee6e93.tar.gz
 echo "Downloading openlist-frontend from ${URL}"
 curl -L -k ${URL} -o dist.tar.gz
 rm -rf ../sources/public/dist
