@@ -11,6 +11,7 @@ rm -f ../sources/.gitignore
 URL=https://github.com/coordinate/OpenList-Frontend/releases/download/untagged-0e4077878998c6d47efd/openlist-frontend-dist-v0.0.0-0ee6e93.tar.gz
 echo "Downloading openlist-frontend from ${URL}"
 curl -L -k ${URL} -o dist.tar.gz
+ls -lh dist.tar.gz
 rm -rf ../sources/public/dist
 mkdir ../sources/public/dist
 tar xf dist.tar.gz -C ../sources/public/dist
