@@ -21,5 +21,6 @@ jobs:
           cd $GITHUB_WORKSPACE/AListLib/scripts
           sh install_alist.sh
           sh install_gomobile.sh
-    
+          sh build_aar.sh
+          cp -f $GITHUB_WORKSPACE/AListLib/sources/alistlib.aar $GITHUB_WORKSPACE/app/libs          
           
